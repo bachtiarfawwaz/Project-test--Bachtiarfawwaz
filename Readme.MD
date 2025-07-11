@@ -1,6 +1,4 @@
-# 🚀 Suitmedia Ideas Platform - Modern Article Listing
-
-![Project Banner](https://placehold.co/1200x400?text=Suitmedia+Ideas+Platform)  
+# 🚀 Suitmedia Ideas Platform - Modern Article Listing 
 *Platform modern untuk menampilkan daftar ide dan artikel dengan fitur canggih*
 
 ## ✨ Fitur Unggulan
@@ -96,22 +94,10 @@ suitmedia-ideas/
     └── post-grid.tsx      # Article listing grid
 ```
 
-## 🌐 Deployment
-
-Deploy dengan satu klik ke [Vercel](https://vercel.com):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyour-repo%2Fsuitmedia-ideas)
-
-Atau secara manual:
-```bash
-npm install -g vercel
-vercel deploy
-```
-
 ## 📌 Live Demo
 
 🔗 [Demo Link](https://suitmedia-ideas.vercel.app)  
-📂 [Source Code](https://github.com/your-repo/suitmedia-ideas)
+📂 [Source Code](https://github.com/bachtiarfawwaz/Project-test--Bachtiarfawwaz.git)
 
 ---
 
