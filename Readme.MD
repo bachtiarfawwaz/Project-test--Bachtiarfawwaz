@@ -48,13 +48,7 @@
 
 ## 🚀 Quick Start
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-repo/suitmedia-ideas.git
-   cd suitmedia-ideas
-   ```
-
-2. **Install dependencies**  
+1. **Install dependencies**  
    ```bash
    npm install
    # or
@@ -63,7 +57,7 @@
    pnpm install
    ```
 
-3. **Run development server**
+2. **Run development server**
    ```bash
    npm run dev
    # or
@@ -72,7 +66,7 @@
    pnpm dev
    ```
 
-4. **Open in browser**  
+3. **Open in browser**  
    Visit [http://localhost:3000](http://localhost:3000)
 
 ## 📂 Project Structure
@@ -96,8 +90,8 @@ suitmedia-ideas/
 
 ## 📌 Live Demo
 
-🔗 [Demo Link](https://suitmedia-ideas.vercel.app)  
-📂 [Source Code](https://github.com/bachtiarfawwaz/Project-test--Bachtiarfawwaz.git)
+🔗 [Demo Link](https://project-test-bachtiarfawwaz.vercel.app/)  
+📂 [Source Code](https://github.com/bachtiarfawwaz/Project-test-Bachtiarfawwaz.git)
 
 ---
 
