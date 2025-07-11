@@ -1,120 +1,120 @@
-Proyek ini adalah implementasi halaman daftar ide/artikel dengan fitur-fitur modern seperti header adaptif, banner parallax, fungsionalitas sorting dan pagination yang persisten, serta integrasi API.
+# 🚀 Suitmedia Ideas Platform - Modern Article Listing
 
-## Fitur Utama
+![Project Banner](https://placehold.co/1200x400?text=Suitmedia+Ideas+Platform)  
+*Platform modern untuk menampilkan daftar ide dan artikel dengan fitur canggih*
 
-Proyek ini mencakup fitur-fitur berikut sesuai dengan spesifikasi:
+## ✨ Fitur Unggulan
 
-### 1. Header
+### 🎛️ Header Canggih
+- **Sticky Navigation** - Tetap terlihat saat scrolling
+- **Smart Visibility** - Menyembunyikan diri saat scroll ke bawah, muncul saat scroll up
+- **Glass Effect** - Tampilan semi-transparan yang elegan
+- **Active Menu Indicator** - Navigasi yang intuitif
 
-- **Fixed Position**: Header tetap di bagian atas layar.
-- **Adaptive Visibility**: Header akan menghilang saat pengguna scroll ke bawah dan muncul kembali saat scroll ke atas.
-- **Transparent Background**: Header memiliki sedikit transparansi saat di-scroll untuk efek visual yang lebih baik.
-- **Active State Menu**: Menu navigasi akan menunjukkan halaman yang sedang aktif.
+### 🌌 Banner Parallax
+- **Dynamic Background** - Gambar yang mudah dikustomisasi
+- **Diagonal Cut Design** - Potongan miring yang stylish
+- **3D Parallax Effect** - Animasi depth yang memukau
+- **Responsive Typography** - Teks yang selalu tampil sempurna
 
+### 📚 Article Listing
+| Fitur | Deskripsi |
+|-------|-----------|
+| **Smart Sorting** | Urutkan berdasarkan Terbaru/Terlama |
+| **Flexible Pagination** | Navigasi halaman yang smooth |
+| **View Customization** | Pilih tampilan 10/20/50 item per halaman |
+| **State Persistence** | Setting tetap tersimpan setelah refresh |
+| **Optimized Thumbnails** | Rasio gambar konsisten & lazy loading |
+| **Clean Truncation** | Judul dipotong rapi dengan ellipsis |
 
-### 2. Banner
-
-- **Customizable Image**: Banner menggunakan gambar latar belakang yang dapat diperbarui dengan mudah.
-- **Diagonal Bottom Edge**: Bagian bawah banner memiliki potongan miring yang elegan.
-- **Parallax Effect**: Terdapat efek parallax antara gambar latar belakang dan teks pada banner saat di-scroll, menciptakan kedalaman visual.
-
-
-### 3. List Post
-
-- **Sorting Functionality**: Pengguna dapat mengurutkan daftar post berdasarkan "Terbaru" atau "Terlama".
-- **Pagination**: Fungsi pagination memungkinkan navigasi antar halaman.
-- **Items Per Page**: Pilihan jumlah item per halaman (10, 20, 50) tersedia.
-- **State Persistence**: Pengaturan sort, show-per-page, dan halaman yang dikunjungi akan tetap tersimpan meskipun halaman di-refresh.
-- **Consistent Thumbnail Ratio**: Rasio gambar thumbnail pada setiap kartu post konsisten.
-- **Lazy Loading Images**: Gambar-gambar post dimuat secara lazy untuk performa yang lebih baik.
-- **Title Truncation**: Judul post dibatasi maksimal 3 baris dengan ellipsis jika melebihi batas.
-
-
-### 4. API Integration
-
-- **Proxy API**: Pengaturan proxy telah dilakukan untuk mengakses API eksternal.
-- **API Endpoint**: Menggunakan API dari `https://suitmedia-backend.suitdev.com/api/ideas`.
-- **Parameters**: Mendukung parameter `page[number]`, `page[size]`, `append[]` (`small_image`, `medium_image`), dan `sort` (`published_at` atau `-published_at`).
-
-
-## Teknologi yang Digunakan
-
-- **Next.js**: Framework React untuk aplikasi web full-stack.
-- **React**: Library JavaScript untuk membangun antarmuka pengguna.
-- **Tailwind CSS**: Framework CSS untuk styling yang cepat dan responsif.
-- **shadcn/ui**: Komponen UI yang dapat diakses dan dapat disesuaikan.
-- **Lucide React**: Koleksi ikon.
-
-
-## Instalasi dan Menjalankan Proyek
-
-Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
-
-1. **Clone Repository**:
-```bash
-git clone [URL_REPOSITORY_ANDA]
-cd halaman-list-parallax
-```
-2. **Install Dependencies**:
-```bash
-npm install
-
-# atau
-
-yarn install
+### ⚡ API Integration
+```javascript
+{
+  endpoint: "https://suitmedia-backend.suitdev.com/api/ideas",
+  params: {
+    "page[number]": 1,
+    "page[size]": 10,
+    "append[]": ["small_image", "medium_image"],
+    "sort": "published_at" // or "-published_at"
+  }
+}
 ```
 
+## 🛠️ Tech Stack
 
-3. **Run Development Server**:
-```bash
-npm run dev
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?logo=react&logoColor=white)
+![Lucide Icons](https://img.shields.io/badge/Lucide_Icons-FF6B6B?logo=react&logoColor=white)
 
-# atau
+## 🚀 Quick Start
 
-yarn dev
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-repo/suitmedia-ideas.git
+   cd suitmedia-ideas
+   ```
+
+2. **Install dependencies**  
+   ```bash
+   npm install
+   # or
+   yarn
+   # or
+   pnpm install
+   ```
+
+3. **Run development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. **Open in browser**  
+   Visit [http://localhost:3000](http://localhost:3000)
+
+## 📂 Project Structure
+
 ```
-
-
-4. **Akses Aplikasi**:
-Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
-
-
-## Struktur Proyek
-
-```
-.
+suitmedia-ideas/
 ├── app/
-│   ├── api/
+│   ├── api/               # API routes
 │   │   └── ideas/
-│   │       └── route.ts  # API Proxy untuk fetching data
-│   ├── globals.css       # Global CSS (Tailwind CSS)
-│   ├── layout.tsx        # Root layout
-│   ├── loading.tsx       # Loading fallback
-│   └── page.tsx          # Halaman utama (IdeasPage)
+│   │       └── route.ts   # Proxy API handler
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   ├── loading.tsx        # Loading skeleton
+│   └── page.tsx           # Main page
 └── components/
-├── banner.tsx        # Komponen Banner dengan efek parallax
-├── header.tsx        # Komponen Header dengan scroll behavior
-├── pagination.tsx    # Komponen Pagination
-└── post-grid.tsx     # Komponen Grid untuk menampilkan post
+    ├── banner.tsx         # Parallax banner
+    ├── header.tsx         # Smart header
+    ├── pagination.tsx     # Interactive pagination
+    └── post-grid.tsx      # Article listing grid
 ```
 
-## Deployment
+## 🌐 Deployment
 
-Proyek ini dapat di-deploy ke platform cloud seperti Vercel. Pastikan Anda telah menginstal Vercel CLI dan terhubung dengan akun Vercel Anda.
+Deploy dengan satu klik ke [Vercel](https://vercel.com):
 
-1. **Deploy ke Vercel**:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyour-repo%2Fsuitmedia-ideas)
+
+Atau secara manual:
 ```bash
+npm install -g vercel
 vercel deploy
 ```
 
+## 📌 Live Demo
 
-## URL Repository dan Deployment
+🔗 [Demo Link](https://suitmedia-ideas.vercel.app)  
+📂 [Source Code](https://github.com/your-repo/suitmedia-ideas)
 
-- **URL Repository**: [URL_REPOSITORY_ANDA]
-- **URL Deployment**: [URL_DEPLOYMENT_ANDA]
+---
 
-
-</md>**Catatan:**
-
-- Anda perlu mengganti `[URL_REPOSITORY_ANDA]` dan `[URL_DEPLOYMENT_ANDA]` dengan link repository GitLab dan link deployment Anda yang sebenarnya.
-- Untuk menginstal kode ini, Anda bisa menggunakan mekanisme instalasi bawaan v0 dengan mengklik tombol "Download Code" di tampilan Block.
+<div align="center">
+  Made with ❤️ by Bachtiarfawwaz | MIT License
+</div>
